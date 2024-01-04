@@ -29,7 +29,7 @@
                 </ul>
             </nav>
             <section class="banner bg-info">
-                <img src="http://marondal.com/material/images/dulumary/web/front/jquery/test06_banner4.jpg" alt="banner" class="w-100">
+                <img src="http://marondal.com/material/images/dulumary/web/front/jquery/test06_banner1.jpg" alt="banner" class="w-100">
             </section>
             <section class="reserve bg-primary d-flex">
                 <section class="real-time-reserved col-4 d-flex justify-content-center align-items-center">
@@ -53,7 +53,7 @@
 
                         <!-- 버튼 -->
                         <div class="d-flex justify-content-end mt-2">
-                            <button type="button" class="submit-btn btn btn-success">조회하기</button>
+                            <button type="button" id="checkBtn" class="submit-btn btn btn-success">조회하기</button>
                         </div>
                     </div>
                 </section>
@@ -72,5 +72,15 @@
                 </div>
             </footer>
         </div>
+        
+        <script>
+        	$(document).ready(function() {
+        		
+        		$("#checkBtn").on("click", function() {
+        			alert("이름: 신보람\n날짜: 2020-01-04\n일수: 2\n인원:4\n상태:대기중");
+        			
+        		});
+        	});
+        </script>
 </body>
 </html>
