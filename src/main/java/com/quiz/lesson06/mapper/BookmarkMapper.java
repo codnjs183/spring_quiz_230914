@@ -1,10 +1,10 @@
 package com.quiz.lesson06.mapper;
 
-import org.springframework.stereotype.Repository;
+import org.apache.ibatis.annotations.Mapper;
 
 import com.quiz.lesson06.domain.Bookmark;
 
-@Repository
+@Mapper   
 public interface BookmarkMapper {
 	
 	public Bookmark selectBookmarkList();
